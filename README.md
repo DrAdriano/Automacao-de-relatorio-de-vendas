@@ -1,4 +1,4 @@
-# Automação de relatório de vendas
+# Automação de relatório de vendas [Sofrendo por alterações ⚠️]
 
 ## Sumário
 
@@ -7,12 +7,11 @@
 * [Linguagens e tecnologias usadas](#linguagens-e-tecnologias-usadas)
 * [Bibliotecas Python usadas](#bibliotecas-python-usadas)
 * [Passo a passo do código](#passo-a-passo-do-código)
+* [Captura de tela](#captura-de-tela)
 * [Conclusões](#conclusões)
 * [Créditos](#créditos)
 * [Contato](#contato)
 
-
-<!---* [Captura de tela](#captura-de-tela)--->
 
 ## Sobre o projeto
 
@@ -20,7 +19,7 @@ Esse repositório contém uma solução para um desafio envolvendo automação e
 
 **Desafio:** Criar um código, usando Python, que acesse os dados de vendas de uma empresa fictícia, calcule o faturamento e a quantidade total de produtos vendidos no dia anterior e envie um e-mail com essas informações. Esse envio de relatório pode ser parte do trabalho diário de um analista de uma empresa.
 
-Desse modo, estão disponibilizados neste repositório: a base de vendas, que contém informações do quantos itens o cliente comprou e quanto custou, por exemplo; a solução detalhada, em que estão explicações e um passo a passo; a solução final, sem a poluição visual dos comentários e adaptada para funcionar através do Visual Code Studio; e a pasta com a captura de tela de como ficou a mensagem do e-mail.
+Estão disponibilizados neste repositório os seguintes arquivos: a base de vendas, que contém informações de aproximadamente 7.000 vendas; duas soluções detalhadas, uma usando PyAutoGUI e outra com Selenium, em que estão explicações de como foram desenvolvidos os códigos; duas soluções finais, adaptadas para o  Visual Code Studio a partir das soluções detalhadas, mas desenvolvidas sem a poluição visual dos comentários; e a pasta com a captura de tela de como ficou a mensagem do e-mail.
 
 ## About the project
 
@@ -28,7 +27,7 @@ This repository contains a solution to a challenge involving automation and is o
 
 **Challenge:** Create a code, using Python, that accesses the sales data of a fictitious company, calculates the revenue and the total quantity of products sold the previous day and sends an email with this information. This report submission can be part of the day-to-day work of a company analyst.
 
-Thus, the following are available in this repository: the sales base, which contains information on how many items the customer purchased and how much it cost, for example; the detailed solution, in which there are explanations and a step by step; the final solution, without the visual pollution of comments and adapted to work through Visual Code Studio; and the folder with the screenshot with email message.
+The following files are available in this repository: the sales base, which contains information on approximately 7,000 sales; two detailed solutions, one using PyAutoGUI and the other with Selenium, in which there are explanations of how the codes were developed; two final solutions, adapted for Visual Code Studio from the detailed solutions, but developed without the visual clutter of comments; and the folder with the screenshot of how the email message turned out.
 
 ## Linguagens e tecnologias usadas
 
@@ -38,12 +37,11 @@ Thus, the following are available in this repository: the sales base, which cont
 * [Markdown](https://www.markdownguide.org/)
 
 
-## Bibliotecas Python usadas
+## Principais bibliotecas Python usadas
 
 * [Pandas](https://pandas.pydata.org/)
 * [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)
-* [Pyperclip](https://pypi.org/project/pyperclip/)
-* [Time](https://docs.python.org/3/library/time.html)
+* [Selenium](https://selenium-python.readthedocs.io/)
 
 ## Passo a passo do código
 
@@ -54,13 +52,13 @@ Thus, the following are available in this repository: the sales base, which cont
 * Passo 5: Calculando os indicadores
 * Passo 6: Enviando o relatório por e-mail
 
-<!---
+
 ## Captura de tela 
 
 O e-mail enviado no final do código pode ser visto abaixo.
 
 ![Captura de tela](Captura de tela/e-mail.png)
---->
+
 
 ## Conclusões
 
@@ -73,7 +71,7 @@ Podemos ainda pensar em algumas possibilidades de melhoria para o código, como 
 
 ## Créditos 
 
-O desafio, bem como muitos detalhes de sua resolução, se devem ao João Lira, do canal do Youtube [Hashtag Programação](https://www.youtube.com/@HashtagProgramacao).
+O desafio, bem como muitos detalhes de sua resolução usando PyAutoGUI, se devem ao João Lira, do canal do Youtube [Hashtag Programação](https://www.youtube.com/@HashtagProgramacao). Após meus aportantamentos sobre os pontos negativos do PyAutoGUI, o meu amigo pessoal, [Lucas Corbanez](https://github.com/Corbanez97), sugeriu o uso do Selenium.
 
 ## Contato
 
