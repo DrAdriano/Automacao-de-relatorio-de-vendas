@@ -1,4 +1,4 @@
-# Automação de relatório de vendas [Sofrendo por alterações ⚠️]
+# Automação de relatório de vendas [Sofrendo alterações ⚠️]
 
 ## Sumário
 
