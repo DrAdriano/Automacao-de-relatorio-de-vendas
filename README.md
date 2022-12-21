@@ -1,4 +1,4 @@
-# Automação de relatório de vendas [Sofrendo por alterações ⚠️]
+# Automação de relatório de vendas [Sofrendo alterações ⚠️]
 
 ## Sumário
 
@@ -57,8 +57,7 @@ The following files are available in this repository: the sales base, which cont
 
 O e-mail enviado no final do código pode ser visto abaixo.
 
-![Captura de tela](Captura de tela/e-mail.png)
-
+![Captura de tela](Captura_de_tela/e-mail.png)
 
 ## Conclusões
 

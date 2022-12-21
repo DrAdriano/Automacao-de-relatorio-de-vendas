@@ -2,12 +2,18 @@ import pyautogui
 import pyperclip
 import time
 import pandas as pd
+import smtplib
+import email.message
+
+pyautogui.PAUSE = 1
 
 # Passo 1 - Entrando no sistema da empresa.
 
-pyautogui.hotkey("ctrl", "t")
-pyperclip.copy(
-    "https://drive.google.com/drive/folders/1t5fxGDQ5BZe18EKEyRtM8yZAlog7b6ZB?usp=sharing")
+pyautogui.hotkey("win")
+pyperclip.copy("Google Chrome")
+pyautogui.hotkey("ctrl", "v")
+pyautogui.hotkey("enter")
+pyperclip.copy("https://drive.google.com/drive/folders/1t5fxGDQ5BZe18EKEyRtM8yZAlog7b6ZB?usp=sharing")
 pyautogui.hotkey("ctrl", "v")
 pyautogui.press("enter")
 
@@ -39,36 +45,30 @@ quantidade = tabela["Quantidade"].sum()
 
 # Passo 6 - Enviando o relatório por e-mail.
 
-pyautogui.hotkey("ctrl", "t")
-pyperclip.copy("https://mail.google.com/mail/u/0/#inbox")
-pyautogui.hotkey("ctrl", "v")
-pyautogui.press("enter")
+def enviar_email():  
+    mensagem_email = f""" <p>Bom dia,</p>
 
-time.sleep(5)
+    <p>Venho por meio dessa mensagem gerada automaticamente com Python, expor o relatório de vendas de ontem. O faturamento total 
+foi de R$ {faturamento:,.2f}, com um total de {quantidade:,} produtos vendidos.</p>
+    <p>Fico à disposição para qualquer dúvida.</p>
 
-pyautogui.click(x=78, y=180)
-time.sleep(1.5)
+    <p>Atenciosamente,</p>
+    <p>Adriano Jr. G. Gonçalves</p>
+    """
 
-pyautogui.write("pythonimpressionador@gmail.com")
-time.sleep(0.5)
-pyautogui.press("tab")
-pyautogui.press("tab")
-pyperclip.copy("Relatório de Vendas")
-pyautogui.hotkey("ctrl", "v")
-pyautogui.press("tab")
+    msg = email.message.Message()
+    msg['Subject'] = "Relatório de Vendas"
+    msg['From'] = 'E-mail de origem'
+    msg['To'] = 'E-mail de destino'
+    password = 'Senha do Gmail para a Automação'  
 
-texto = f"""Bom dia,
+    msg.add_header('Content-Type', 'text/html')
+    msg.set_payload(mensagem_email)
 
-Venho por meio dessa, expor o relatório de vendas de ontem. O faturamento total 
-foi de R$ {faturamento:,.2f}, com um total de {quantidade:,} produtos vendidos.
+    s = smtplib.SMTP('smtp.gmail.com: 587')
+    s.starttls()
+    s.login(msg['From'], password)
+    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+    print('Email enviado com sucesso!')
 
-Fico à disposição para qualquer dúvida.
-
-Atenciosamente,
-Adriano Jr. G. Gonçalves
-"""
-
-pyperclip.copy(texto)
-pyautogui.hotkey("ctrl", "v")
-
-pyautogui.hotkey("ctrl", "enter")
+enviar_email()
