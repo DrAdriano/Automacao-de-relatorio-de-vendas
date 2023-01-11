@@ -19,7 +19,7 @@ Esse repositório contém uma solução para um desafio envolvendo automação e
 
 **Desafio:** Automatizar o processo de acessar os dados de vendas de uma empresa, calcular o faturamento e a quantidade total de produtos vendidos no dia anterior e enviar um e-mail com essas informações. Esse envio de relatório pode ser parte do trabalho diário de um analista de uma empresa.
 
-Estão disponibilizados neste repositório os seguintes arquivos: uma solução detalhada usando PyAutoGUI, uma biblioteca do Python para automação de comandos do mouse e do teclado; duas soluções finais, uma adaptada para o Visual Code Studio a partir da solução detalhada, mas desenvolvidas sem a poluição visual dos comentários, e outra, uma versão alternativa, usando Selenium, que é capaz de automatizar atividades de navegadores; e a pasta com a captura de tela de como ficou a mensagem do e-mail.
+Estão disponibilizados neste repositório os seguintes arquivos: a base de vendas, que contém informações de aproximadamente 7.000 vendas; uma solução detalhada usando PyAutoGUI, uma biblioteca do Python para automação de comandos do mouse e do teclado; duas soluções finais, uma adaptada para o Visual Code Studio a partir da solução detalhada, mas desenvolvidas sem a poluição visual dos comentários, e outra, uma versão alternativa, usando Selenium, que é capaz de automatizar atividades de navegadores; e a pasta com a captura de tela de como ficou a mensagem do e-mail.
 
 ## About the project
 
