@@ -15,7 +15,7 @@
 
 ## Sobre o projeto
 
-Esse repositório contém uma solução para um desafio envolvendo automação e é organizado de maneira detalhada e acessível, podendo ser entendida por quem está iniciando na linguagem Python.
+Esse repositório contém uma solução para um desafio envolvendo automação e é organizado de maneira detalhada e acessível, podendo ser entendida por quem está iniciando na linguagem Python. Esse é um projeto de portfólio, que também tem como objetivo colocar em prática, bem como documentar, alguns dos meus conhecimentos na linguagem, por isso, nem sempre desenvolvo a Solução Detalhada da maneira mais objetiva.
 
 **Desafio:** Automatizar o processo de acessar os dados de vendas de uma empresa, calcular o faturamento e a quantidade total de produtos vendidos no dia anterior e enviar um e-mail com essas informações. Esse envio de relatório pode ser parte do trabalho diário de um analista de uma empresa.
 
